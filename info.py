@@ -4,9 +4,9 @@ from os import environ
 id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
-SESSION = environ.get('SESSION', 'TechVJBot')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
+SESSION = environ.get('SESSION', 'JiC54')
+API_ID = int(environ.get('API_ID', '19328466'))
+API_HASH = environ.get('API_HASH', 'b2f81c541c4e66e7d167393c5dcd48ef')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
@@ -23,12 +23,12 @@ else:
 URL = environ.get("URL", "")
 
 # Admins, Channels & Users
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001660906766'))
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1324027496').split()]
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "techvjautobot")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://jic54autofilter:jic54autofilter@cluster0.nbp6y.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "jic54autofilter")
 
 # Shortlink Info
 SHORTLINK = bool(environ.get('SHORTLINK', True)) # Set True Or False
